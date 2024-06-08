@@ -1,0 +1,26 @@
+spring:
+  #  profiles:
+  #    active: dev
+  #  output.ansi.enabled: ALWAYS # enable colored terminal
+  application:
+    name: zaai
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3
+          temperature: 0.7
+#  cloud:
+#    openfeign:
+#      client:
+#        config:
+#          OllamaFeignClient:
+#            url: localhost:11434
+
+app:
+  ollama:
+    llama3:
+      temperature: 0.5f
+    llama2:
+      temperature: 0.9f
