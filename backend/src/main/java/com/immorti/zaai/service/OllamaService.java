@@ -1,5 +1,6 @@
 package com.immorti.zaai.service;
 
+import com.immorti.zaai.rest.dto.MessageDto;
 import java.util.Map;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
@@ -13,13 +14,8 @@ import org.springframework.stereotype.Service;
 @DependsOn("chatClientConfiguration")
 public class OllamaService {
 
-    @Autowired
-    private Map<String, OllamaChatModel> ollamaChatModel;
-
-    public String call(String message) {
-        Prompt prompt = new Prompt(new UserMessage(message));
-        ChatResponse response = ollamaChatModel.get("llama3").call(prompt);
-        return response.getResult().getOutput().getContent();
+    public String call(MessageDto message) {
+        return "not implemented";
     }
 
 }

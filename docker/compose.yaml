@@ -1,14 +1,10 @@
 services:
   ollama:
-    container_name: ollama
     build:
       context: ollama
       dockerfile: Dockerfile
       args:
-        MODEL: llama3
+        MODEL: llama2
     ports:
       - '11434:11434'
-#    devices:
-#      - /dev/kfd
-#      - /dev/dri
     restart: always

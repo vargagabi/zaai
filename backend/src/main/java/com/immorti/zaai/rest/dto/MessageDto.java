@@ -11,6 +11,8 @@ import lombok.Setter;
 @Setter
 public class MessageDto {
 
+    private String model;
+
     private String message;
 
 }

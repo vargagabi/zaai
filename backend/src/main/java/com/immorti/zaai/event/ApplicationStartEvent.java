@@ -2,7 +2,6 @@ package com.immorti.zaai.event;
 
 import com.immorti.zaai.service.OllamaService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.event.EventListener;

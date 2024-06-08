@@ -19,7 +19,7 @@ public class OllamaController {
 
     @PostMapping(path = "/call")
     public String call(@RequestBody MessageDto message) {
-        return ollamaService.call(message.getMessage());
+        return ollamaService.call(message);
     }
 
 }
